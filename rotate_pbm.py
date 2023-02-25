@@ -1,7 +1,7 @@
-# This script is rotate the pbm image to either 90 or 180 degrees
+# This script can rotate the pbm image to either 90, 180, or 270 degrees.
 # Author: bhanu.kiran117@gmail.com
-# This script has function convert_pdbfile which accepts two parameters 1. pdb file 2. Angle to rorate
-# This covert the pbm file and restore in rotated_Image_{angle}.pbm in same directory
+# The convert_pdbfile function in this script takes two parameters: a pdb file and an angle to rotate it.
+# This script converts the pbm file and saves the rotated image as "rotated_Image_{angle}.pbm" in the same directory
 
 import errno
 import re
@@ -98,7 +98,7 @@ def covert_pbmfile(finame, angle):
     except Exception as e:
         print("Other error" + str(e))
 
-
+# function call
 covert_pbmfile("Image.pbm",90)
 covert_pbmfile("Image.pbm",180)
 covert_pbmfile("Image.pbm",270)
@@ -141,3 +141,5 @@ P1
 0 0 0 0 0 0 1 0 0 0
 
 """
+
+
