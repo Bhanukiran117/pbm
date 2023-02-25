@@ -64,7 +64,7 @@ def covert_pbmfile(finame, angle):
                 rotated_array.append(rotated_array_temp)
             cols,rows = rows, cols
             print (rotated_array)
-        # Save the rorated bitmap arry to new file.
+        
 
         
         if angle == 180:
@@ -84,7 +84,8 @@ def covert_pbmfile(finame, angle):
                 rotated_array.append(rotated_array_temp)
             cols,rows = rows, cols
             print(rotated_array)
-
+            
+        # Save the rorated bitmap arry to new file.
         with open('rotated_Image_'+ str(angle) +'.pbm', 'w') as rotated_file:
                 rotated_file.write(linesoffile[0])
                 print (angle)
