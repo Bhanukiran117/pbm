@@ -31,7 +31,7 @@ def covert_pbmfile(finame, angle):
             sys.exit(1)
         print ( "Number of rows", rows, cols)
         array_data=[] 
-        for row in range(rows):  # Added two
+        for row in range(rows):  
             pbm_index=row+3
             pbm_line = linesoffile[pbm_index].rstrip()
             #print (pbm_line)
